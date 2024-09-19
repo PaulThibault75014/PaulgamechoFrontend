@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Toggle from './toggle';
+import Toggle from './Toggle';
 import styles from '../styles/Setting.module.css';
 import { useRouter } from "next/router";
 import Dropdown from 'react-dropdown'; //import du composant Dropdown déja tout fait
