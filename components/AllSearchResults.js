@@ -23,7 +23,7 @@ function AllSearchResults() {
 
         const fetchSearchResults = async () => {
             const response = await fetch(
-                `http://https://paulgamecho-backend1.vercel.app/games/search?name=${searchQuery}`, {
+                `https://paulgamecho-backend1.vercel.app/games/search?name=${searchQuery}`, {
                 cache: "force-cache",
             });
 

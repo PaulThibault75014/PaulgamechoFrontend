@@ -42,7 +42,7 @@ function Profile() {
       const formData = new FormData(); // faceup part3 adapté à React
       formData.append("avatar", file); // premier paramètre = nom donné au fichier, second = cible du fichier
 
-      fetch("http://https://paulgamecho-backend1.vercel.app/profile/avatar", {
+      fetch("https://paulgamecho-backend1.vercel.app/profile/avatar", {
         // création de la route
         method: "POST",
         body: formData,
@@ -70,7 +70,7 @@ function Profile() {
       return;
     }
 
-    fetch("http://https://paulgamecho-backend1.vercel.app/users/update-username", {
+    fetch("https://paulgamecho-backend1.vercel.app/users/update-username", {
       method: "PUT",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ currentUsername, newUsername })
@@ -102,7 +102,7 @@ function Profile() {
       return;
     }
 
-    fetch("http://https://paulgamecho-backend1.vercel.app/users/update-email", {
+    fetch("https://paulgamecho-backend1.vercel.app/users/update-email", {
       method: "PUT",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ currentEmail, newEmail })

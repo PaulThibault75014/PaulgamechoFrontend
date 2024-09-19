@@ -33,7 +33,7 @@ function Game() {
   const fetchRatings = () => {
   const query = `name=${gameDetails.name}`
 
-fetch(`http://https://paulgamecho-backend1.vercel.app/games/ratings?${query}`)
+fetch(`https://paulgamecho-backend1.vercel.app/games/ratings?${query}`)
   .then((response) => response.json())
   .then((data) => {
     console.log("useEffect data", data);

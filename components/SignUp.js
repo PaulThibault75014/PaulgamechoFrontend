@@ -56,7 +56,7 @@ function SignUp() {
     // .length > 0 - vérifie si le tableau contient des éléments. Si le tableau contient des éléments, cela signifie que des erreurs sont présentes.
     if (Object.keys(newErrors).length > 0) return;
 
-    fetch("http://https://paulgamecho-backend1.vercel.app/users/signup", {
+    fetch("https://paulgamecho-backend1.vercel.app/users/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, email, password, confirmPassword }),

@@ -54,7 +54,7 @@ function Ratings() {
     if (!user.token) {
       return;
     }
-    fetch(`http://https://paulgamecho-backend1.vercel.app/ratings/${user.token}`)
+    fetch(`https://paulgamecho-backend1.vercel.app/ratings/${user.token}`)
       .then((response) => response.json())
       .then((data) => {
         console.log("useEFFECT DATA", data);
@@ -64,7 +64,7 @@ function Ratings() {
 
   const handleDelete = (event, rating) => { //inversion, les arguments doivent être dans l'ordre d'appel
     event.stopPropagation();
-    fetch(`http://https://paulgamecho-backend1.vercel.app/ratings/${user.token}/${rating.name}`, {
+    fetch(`https://paulgamecho-backend1.vercel.app/ratings/${user.token}/${rating.name}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     })
