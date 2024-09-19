@@ -23,7 +23,7 @@ function AllSuggestions () {
 
 useEffect(() => {
     const fetchSuggestions = async () => {
-        const response = await fetch(`http://localhost:3000/games/suggestions?name=${suggestionQuery}`, {
+        const response = await fetch(`http://https://paulgamecho-backend1.vercel.app/games/suggestions?name=${suggestionQuery}`, {
         cache: "force-cache",
        })
        if(!response.ok) {

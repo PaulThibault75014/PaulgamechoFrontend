@@ -29,7 +29,7 @@ function Setting() {
 
     //fonction qui va fetch la route delete/:token pour suprimer les ratings en fonctions de l'utilisateur pui qui remetes la valeur de ratings a tableau vide
     const handleDeleteRatings = () => {
-        fetch(`http://localhost:3000/ratings/${usertoken}`, {
+        fetch(`http://https://paulgamecho-backend1.vercel.app/ratings/${usertoken}`, {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json' },
         })
@@ -42,7 +42,7 @@ function Setting() {
 
     //fonction qui vas fetch la route delete user du backend(si réponse du back on dispatch la fonction logout qui remet les valeur de user a null, si non erreur. Ensuite on redirige vers la welcome)
     const handleRemove = () => {
-        fetch(`http://localhost:3000/users/${userName}`, { method: 'DELETE' })
+        fetch(`http://https://paulgamecho-backend1.vercel.app/users/${userName}`, { method: 'DELETE' })
             .then(data => {
                 if (data) {
                     dispatch(logout())

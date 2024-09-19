@@ -36,7 +36,7 @@ function Home() {
   useEffect(() => {
     const fetchLatestGames = async () => {
       const response = await fetch(
-        "http://localhost:3000/games/latestreleased", {
+        "http://https://paulgamecho-backend1.vercel.app/games/latestreleased", {
         cache: "force-cache",
       }
       );
@@ -153,7 +153,7 @@ function Home() {
 
   const handleSearch = async () => {
     const response = await fetch(
-      `http://localhost:3000/games/search?name=${searchValue}`, {
+      `http://https://paulgamecho-backend1.vercel.app/search?name=${searchValue}`, {
       cache: "force-cache",
     }
     );
@@ -172,7 +172,7 @@ function Home() {
   // Display only on the search icon
   const handleSearchSuggestions = async () => {
     const response = await fetch(
-      `http://localhost:3000/games/suggestions?name=${searchSuggValue}`, {
+      `http://https://paulgamecho-backend1.vercel.app/games/suggestions?name=${searchSuggValue}`, {
       cache: "force-cache",
     }
     );

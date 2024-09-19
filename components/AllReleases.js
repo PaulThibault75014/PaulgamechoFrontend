@@ -23,7 +23,7 @@ function AllReleases() {
 
   useEffect(() => {
     const fetchLatestGames = async () => {
-      const response = await fetch('http://localhost:3000/games/latestreleased', {
+      const response = await fetch('http://https://paulgamecho-backend1.vercel.app/games/latestreleased', {
         cache: "force-cache",
       })
       // Convention pour vérifier la réception du fetch

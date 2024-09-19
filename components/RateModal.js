@@ -70,7 +70,7 @@ function RateModal({onSubmit}) {
     };
 
     const response = dispatch(openCloseModal(false));
-    await fetch("http://localhost:3000/ratings/save", {
+    await fetch("http://https://paulgamecho-backend1.vercel.app/ratings/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
